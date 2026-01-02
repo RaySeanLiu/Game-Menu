@@ -1,0 +1,11 @@
+# Make label clickable
+                def on_click(event):
+                    self.get_command(text)()
+                
+                def on_press(event):
+                    # Change to pressed image
+                    button.config(image=pressed_photo, fg="#CCCCCC")
+                
+                def on_release(event):
+                    # Restore normal image
+                    button.config(image=normal_photo, fg="#FFFFFF")

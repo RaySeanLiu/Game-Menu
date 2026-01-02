@@ -1,0 +1,17 @@
+print(f"Created simple rectangular button {row}")
+            
+            normal_photo = ImageTk.PhotoImage(normal_crop)
+            pressed_photo = ImageTk.PhotoImage(pressed_crop)
+            
+            # Create a custom button using Label to avoid tkinter button issues
+            button = tk.Label(parent, 
+                                image=normal_photo,
+                                text=text,
+                                font=("Old English Text MT", 12, "bold"),
+                                fg="#FFFFFF",  # White text
+                                compound=tk.CENTER,
+                                bg="",  # Remove bg to avoid error
+                                anchor=tk.CENTER,
+                                cursor="hand2",  # Hand cursor on hover
+                                relief=tk.FLAT,
+                                bd=0)
